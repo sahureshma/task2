@@ -5,10 +5,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaXTwitter,
-  FaEnvelope,
-  FaPhone,
-  FaQuestionCircle,
-  FaChrome,
+ 
   FaEnvelopeCircleCheck
 } from "react-icons/fa6";
 

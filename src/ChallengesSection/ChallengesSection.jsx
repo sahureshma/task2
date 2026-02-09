@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaTimesCircle, FaCheckCircle } from "react-icons/fa";
+import { FaTimesCircle } from "react-icons/fa";
 import imgsave from "../assest/save.png"
 import withoutImg from "../assest/without.png";
 import withImg from "../assest/with.png";

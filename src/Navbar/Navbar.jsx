@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./../assest/Leadcrmlogo.png"
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
       <div className="container">
 
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
             src={logo}
             alt="Logo"
@@ -17,7 +18,7 @@ const Navbar = () => {
             className="me-2"
           />
          
-        </a>
+        </Link>
 
         {/* Toggler */}
         <button
@@ -33,49 +34,41 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto gap-4">
 
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-              >
-                Product
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Option 1</a></li>
-                <li><a className="dropdown-item" href="#">Option 2</a></li>
-              </ul>
+         
+           <li className="nav-item">
+              <Link className="nav-link" to="/">Product</Link>
             </li>
+
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <Link className="nav-link" to="/">Pricing</Link>
             </li>
 
             <li className="nav-item dropdown">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="/"
                 data-bs-toggle="dropdown"
               >
                 Resources
-              </a>
+              </Link>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Docs</a></li>
-                <li><a className="dropdown-item" href="#">Blogs</a></li>
+                <li><Link className="dropdown-item" to="/">Docs</Link></li>
+                <li><Link className="dropdown-item" to="/">Blogs</Link></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="/"
                 data-bs-toggle="dropdown"
               >
                 Company
-              </a>
+              </Link>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">About</a></li>
-                <li><a className="dropdown-item" href="#">Careers</a></li>
+                <li><Link className="dropdown-item" to="/">About</Link></li>
+                <li><Link className="dropdown-item" to="/">Careers</Link></li>
               </ul>
             </li>
 

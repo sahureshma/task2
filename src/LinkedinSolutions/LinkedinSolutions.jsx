@@ -54,9 +54,10 @@ const LinkedinSolutions = () => {
               <p className="card-title">
                 Here is how LeadCRM tackles that situation.
               </p>
-              <a className="green-link">
-                Try LeadCRM Data Enrichment →
-              </a>
+          <a href="/data-enrichment" className="green-link">
+  Try LeadCRM Data Enrichment →
+</a>
+
 
               <div className="inner-card-wrapper">
                 <div className="inner-card">
