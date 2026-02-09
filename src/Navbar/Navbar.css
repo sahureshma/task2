@@ -1,0 +1,32 @@
+/* Menu Hover */
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #20b3e4;      
+  transform: translateY(-1px);
+}
+
+/* Dropdown Hover */
+.dropdown-menu .dropdown-item {
+  transition: background 0.25s ease, padding-left 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #20b3e4;
+  padding-left: 10px;
+}
+
+/* Get Free Account button hover */
+.btn-info:hover {
+  opacity: 0.85;
+}
+
+/* Login Outline Button Hover */
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff !important;
+  border-color: #0d6efd;
+}

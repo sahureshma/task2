@@ -1,0 +1,260 @@
+/* =========================
+   BASE
+========================= */
+.supported-crm {
+  padding: 80px 0;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* =========================
+   TREE FLOW WRAPPER
+========================= */
+.tree-flow {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+/* =========================
+   LEFT TREE
+========================= */
+.left-tree {
+  position: relative;
+}
+
+.tree-node {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+  font-size: 14px;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* =========================
+   CENTER TREE
+========================= */
+.center-tree {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.center-logo {
+  position: relative;
+  z-index: 10;
+  background: #e0f2fe;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoimg {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* =========================
+   RIGHT TREE
+========================= */
+.right-tree {
+  position: relative;
+}
+
+.crm-stack {
+  background: #f1f5f9;
+  padding: 14px;
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.crm {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.hubspot { background: #ff7a59; }
+.pipedrive { background: #16a34a; }
+.salesforce { background: #2563eb; }
+.zoho { background: #facc15; color:#000; }
+
+/* =========================
+   TAGS
+========================= */
+.tag {
+  position: absolute;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0284c7;
+  white-space: nowrap;
+}
+
+.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.red {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* LEFT TAG POSITIONS */
+.t1 { top: 10px; left: 110px; }
+.t2 { top: 90px; left: 150px; }
+.t3 { top: 140px; left: 210px; }
+.t4 { top: 210px; left: 160px; }
+.t5 { top: 280px; left: 130px; }
+
+/* RIGHT TAG POSITIONS */
+.r1 { top: 80px; right: 140px; }
+.r2 { top: 120px; right: 190px; }
+.r3 { top: 160px; right: 240px; }
+.r4 { top: 200px; right: 190px; }
+.r5 { top: 240px; right: 140px; }
+
+/* =========================
+   SVG CURVES
+========================= */
+.tree-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tree-lines path {
+  fill: none;
+  stroke: #cbd5e1;
+  stroke-width: 2;
+  stroke-dasharray: 6 6;
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
+.cta-btn {
+  background: #a3e635;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #b2e462;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 991px) {
+  .tree-flow {
+    min-height: 360px;
+  }
+
+  .tag {
+    font-size: 10px;
+  }
+
+  .crm-stack {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .tree-flow {
+    flex-direction: column;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .left-tree,
+  .center-tree,
+  .right-tree {
+    position: static;
+    text-align: center;
+  }
+
+  .tree-lines {
+    display: none;
+  }
+
+  .tree-node {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .tag {
+    position: static;
+    display: inline-block;
+    margin: 4px;
+    font-size: 11px;
+  }
+
+  .left-tree,
+  .right-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crm-stack {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+}

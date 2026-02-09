@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Navbar from './Navbar/Navbar';
+import HeroSection from './HeroSection/HeroSection';
+import ChallengesSection from './ChallengesSection/ChallengesSection';
+import Testimonials from './Testimonials/Testimonials';
+import LinkedinSolutions from './LinkedinSolutions/LinkedinSolutions';
+import SupportedLeadCRM from './SupportedLeadCRM/SupportedLeadCRM';
+import JoinLeadCRM from './JoinLeadCRM/JoinLeadCRM';
+import Footer from './Footer/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <HeroSection/>
+      <ChallengesSection/>
+      <Testimonials/>
+      <LinkedinSolutions/>
+      <SupportedLeadCRM/>
+      <JoinLeadCRM/>
+   <Footer/>
     </div>
   );
 }
